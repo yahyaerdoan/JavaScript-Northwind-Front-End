@@ -165,3 +165,11 @@ let cartTotalKdv = products
   .reduce((acc, p) => acc + p.unitPrice, 0);
 
 console.log(cartTotalKdv);
+
+console.log("*------------------- JAVASCRİPT 18 Ekim 2021 Pazartesi ------------------------*")
+
+let users = ["Yahya", "Erdoğan", "Ali", "Veli", "Bayram"]
+for (let index = 0; index < users.length; index++) {
+  console.log(users[index])
+  
+}
