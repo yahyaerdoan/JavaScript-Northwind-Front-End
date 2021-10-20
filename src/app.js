@@ -14,9 +14,9 @@ function save(ogrenci, puan = 20) {
   // Default parametreyi en sona yazmak gerekir. java c# böyle ister.
   // console.log(ogrenci.name + " : " + puan)
 }
-save(student, 100); //puanın defaultu 20 vermezsek okumaz, burada farlı verebilir ve olumlu çıkar.
+save(student, 100); //puanın defaultu 20 vermezsek okumaz, burada farklı verebilir ve olumlu çıkar.
 // burada studenti kaldırıp undefined geçersek yukarıdaki parametreyi de değiştirisek yine verileni yazar.
-// mantık oluşturu undefined'ın zıttını getiri. ve sonucu bulur.
+// mantık oluşturu undefined'ın zıttını getirir. ve sonucu bulur.
 
 // Array tanımlamak
 let students = ["yahya", "Betül", "Erdoğan"];
@@ -53,6 +53,7 @@ console.log(..."ABC", "D", ..."EFG", "H"); // yan yana olan harfleri ayırarak y
 // Destructure operatörü
 // Elimizdeki arrayin değerlerini değişkenlerine atamak işlemini yapar.
 // Arrayı parçalamak
+// Burada bir fonction atamasını da destruc edebiliriz.
 let populations = [10000, 20000, 30000, [40000, 50000]];
 let [small, medium, high, [veryHigh, maximum]] = populations;
 console.log(small);
@@ -69,7 +70,7 @@ someFunction(populations); // array verdiğimiz için değişken tanımını ver
 // obje Destructure // objenin istediğin elemanlarını değişkenlere atama yöntemidir.
 let category = { id: 1, name: "İçecek" };
 console.log(category.id);
-console.log(category["name"]);
+console.log(category["name"]); //kategorinin namei, .name de bu farklı kullanım
 
 // Destructure etme yöntemi
 // Elemanlarını değişkenlere atama yöntemidir
@@ -166,10 +167,11 @@ let cartTotalKdv = products
 
 console.log(cartTotalKdv);
 
-console.log("*------------------- JAVASCRİPT 18 Ekim 2021 Pazartesi ------------------------*")
+console.log(
+  "*------------------- JAVASCRİPT 18 Ekim 2021 Pazartesi ------------------------*"
+);
 
-let users = ["Yahya", "Erdoğan", "Ali", "Veli", "Bayram"]
+let users = ["Yahya", "Erdoğan", "Ali", "Veli", "Bayram"];
 for (let index = 0; index < users.length; index++) {
-  console.log(users[index])
-  
+  console.log(users[index]);
 }
