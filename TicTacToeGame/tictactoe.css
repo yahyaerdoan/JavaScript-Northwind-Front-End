@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Times new roman";
+}
+
+.background {
+  background-color: rgb(245, 222, 179);
+  height: 100%;
+  padding-top: 1px;
+}
+
+.title {
+  color: rgb(225, 103, 107);
+  text-align: center;
+  font-size: 40px;
+  margin-top: 1%;
+}
+
+.display {
+  color: rgb(28, 156, 11);
+  font-size: 30px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 400px;
+}
+
+.gametable {
+  /* border: 2px solid rgb(195, 88, 23); */
+  border-collapse: collapse;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+.right-border {
+  border-right: 0.1em solid rgb(245, 8, 8);
+}
+.bottom-border {
+  border-bottom: 0.1em solid rgb(245, 8, 8);
+}
+
+.playerx {
+  color: rgb(195, 88, 23);
+}
+
+.playero {
+  color: rgb(255, 165, 8);
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.controls button {
+  color: white;
+  padding: 5px 100px;
+  border-radius: 9px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.restart {
+  background-color: rgb(28, 156, 11);
+  justify-content: center;
+}
+
+#reset {
+  background-color: rgb(28, 156, 11);
+}
