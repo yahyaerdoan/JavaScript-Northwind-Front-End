@@ -124,3 +124,4 @@ console.log("---------------------"); // false
 console.log("result", 3>((2>1)>1)); // true
 console.log("result", 3>(2>1)>1); // false
 console.log("result", 1<(2<3)); // false
+
