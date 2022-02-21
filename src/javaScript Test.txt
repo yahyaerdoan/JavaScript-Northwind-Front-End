@@ -1,0 +1,71 @@
+1. Aşağıdaki alanların yer aldığı bir HTML sayfası hazırlayarak. 
+Read-only olarak belirtilen alanları hesaplayacak JAVASCRIPT methodları yazınız.
+
+Birim Fiyatı
+Miktar
+Toplam Tutar (read-only)
+İndirim (%)
+İndirim Tutarı
+İndirimli Toplam Tutar (read-only)
+KDV (%)
+KDV Tutarı
+KDV'li Toplam Tutar (read-only)
+
+2.Kitap siparişi alabilecek bir satış sistemi tasarlıyor olsaydınız, temelde kullanacağınız tablolar ve alanlarını basitçe anlatınız.
+
+3.Aşağıdaki veri yapısında bir tablonuz olduğunu düşünün. 
+Bu tablodan İstanbul'da ikamet 
+20-24 yaş aralığında ve Mezun durumundaki öğrencilerden; 
+ID, Ad, Soyad ve 2 yarıyıldaki not ortalamalarının ortalamasını verecek SQL sorgusunuz yazınız.
+
+Öğrenci ID (int), 
+Ad (nvarchar), 
+Soyad (nvarchar), 
+İl (nvarchar), 
+İlçe (nvarchar), 
+Doğum Tarihi (date), 
+Mezun (bit)
+1. Yarıyıl Not Ortalaması (decimal)
+2. Yarıyıl Not Ortalaması (decimal)
+
+SELECT Id, FirstName, LastName, City, Age, (1. Yarıyıl Not Ortalaması + 2. Yarıyıl Not Ortalaması / 2) as NotOrtalaması FROM Students WHERE City='İstanbul'AND Age BETWEEN 20 AND 24 And Graduate='True';
+
+SELECT Mezun, AVG(2ndSemesterGradePointAverage) [İstanbul'da ikamet eden mezun durumdaki öğrencilerin 2. dönem not ortalamalarının ortalaması] 
+FROM Students GROUP BY Mezun;
+
+SELECT AVG(UnitPrice) FROM Products;
+
+4.Aşağıdaki örnek API'yi kullanarak gelen json datayı parse edip basitçe bir gride yazan JS bloğunu yazınız.
+http://dummy.restapiexample.com/api/v1/employees
+
+5.Aşağıdaki dizi elemanlarını küçükten büyüğe sıralayacak C# kod bloğunu yazınız.
+
+int dizi[]={2,7,99,15,13,3,22,42,21};
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{   int[] arrays = {2, 7, 99, 15, 13, 3,22, 42, 21, 56};
+            Array.Sort(arrays );
+	    Console.WriteLine(string.Join(", ", arrays));
+            foreach (int value in arrays)
+            {
+                Console.WriteLine(value);
+            }
+     
+	}
+}
+
+Console Çıktısı : 
+2
+3
+7
+13
+15
+21
+22
+42
+56
+99

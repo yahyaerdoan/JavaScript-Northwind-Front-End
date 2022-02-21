@@ -36,15 +36,15 @@ function faturaHesapla() {
 
   //**********************Matamatiksel islemler******************************
   let toplamTutar = miktar * birimFiyati;
-  let indirimOranı = birimFiyati - (birimFiyati / 100) * indirim; 
+  let indirimOranı = toplamTutar - (toplamTutar / 100 * indirim); 
   let indirimliToplamTutar = toplamTutar - indirimOranı;
-  let kdvOranı = birimFiyati* (kdv/100);
-  let kdvliToplamTutar = toplamTutar + (toplamTutar * kdv) / 100;
+  let kdvOranı = birimFiyati * (kdv/100);
+  let kdvliToplamTutar = indirimOranı + (indirimOranı * kdv / 100);
 
   //*************************************************************************
   document.getElementById("ToplamTutar").value = toplamTutar;
-  document.getElementById("İndirimTutarı").value = indirimliToplamTutar;
-  document.getElementById("İndirimliToplamTutar").value = indirimOranı;
+  document.getElementById("İndirimTutarı").value = indirimOranı;
+  document.getElementById("İndirimliToplamTutar").value = indirimliToplamTutar;
   document.getElementById("KdvTutarı").value= kdvOranı;
   document.getElementById("KdvliToplamTutar").value = kdvliToplamTutar;
 }

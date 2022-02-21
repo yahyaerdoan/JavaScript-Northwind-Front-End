@@ -1,0 +1,61 @@
+Customers {
+    Id : uuid(), required
+    AddressId : uuid(), required
+    FirstName : nvarcarh(), required
+    LastName : nvarcarh(), required
+    Email : nvarcarh(), required
+    PasswordHash : varbinary(), required
+    PasswordSalt : varbinary(), required
+    CreateAt : DateTime(), required
+    UpdateAt : DateTime(), required
+    Status : bit(), required
+}
+
+Addresses{
+    Id : uuid(), required
+    AddressLine : nvarcarh(), required
+    Country : nvarcarh(), required
+    City : nvarcarh(), required
+    CityCode : int(), required
+}
+
+Orders{
+    Id
+    CustomerId : uuid(), required
+    AddressId : uuid(), required
+    BookId : int(), required
+    Quantity : int(), required
+    Price : double(), required
+    Status : bit(), required
+    CreateAt : DateTime(), required
+    UpdateAt : DateTime(), required
+}
+
+Books{
+    Id : int(), required
+    AuthorId : int(), required
+    GenreId : int(), required
+    PublishingHouseId : int(), required
+    Name : nvarcarh(), required
+    Description : nvarcarh(), required
+    Price : double(), required
+    ImageUrl : nvarcarh(), required
+}
+
+Authors{
+    Id : int(), required
+    FirstName : nvarcarh(), required
+    LastName : nvarcarh(), required
+    DateOfBirth : DateTime(), required
+    }
+
+Genres{
+    Id : int(), required
+    Name : nvarcarh(), required    
+}
+
+PublishingHouses{
+    Id : int(), required
+    Name : nvarcarh(), required
+    PublishingDate : Date(), required
+}

@@ -18,17 +18,17 @@
 </table> -->
 
 <table border="0" cellpadding="0" cellspacing="0"> 
-    <tr><td>Birim Fiyati</td><td>:</td><td><input type="text" name="birimFiyati" id="birimFiyati"/></td></tr> 
-    <tr><td>Miktarı</td><td>:</td><td><input type="text" name="miktar" id="miktar"/></td></tr>
-    <tr><td>Toplam Tutar</td><td>:</td><td><input type="text" name="ToplamTutar" id="ToplamTutar"/></td></tr>
+    <tr><td>Birim Fiyati</td><td>:</td><td><input type="number" name="birimFiyati" id="birimFiyati"/></td></tr> 
+    <tr><td>Miktarı</td><td>:</td><td><input type="number" name="miktar" id="miktar"/></td></tr>
+    <tr><td>Toplam Tutar</td><td>:</td><td><input disabled type="number" name="ToplamTutar" id="ToplamTutar"/></td></tr>
     
-    <tr><td>İndirim Oranı</td><td>:</td><td><input type="text" name="indirim" id="indirim"/></td></tr> 
-    <tr><td>İndirim Tutarı</td><td>:</td><td><input type="text" name="İndirimTutarı" id="İndirimTutarı"/></td></tr>
-    <tr><td>İndirimli Toplam Tutar</td><td>:</td><td><input type="text" name="İndirimliToplamTutar" id="İndirimliToplamTutar"/></td></tr>
+    <tr><td>İndirim Oranı</td><td>:</td><td><input type="number" name="indirim" id="indirim"/></td></tr> 
+    <tr><td>İndirim Tutarı</td><td>:</td><td><input type="number" name="İndirimTutarı" id="İndirimTutarı"/></td></tr>
+    <tr><td>İndirimli Toplam Tutar</td><td>:</td><td><input disabled type="number" name="İndirimliToplamTutar" id="İndirimliToplamTutar"/></td></tr>
     
-    <tr><td>Kdv Oranı</td><td>:</td><td><input type="text" name="kdv" id="kdv"/></td></tr>
-    <tr><td>Kdv Tutarı</td><td>:</td><td><input type="text" name="KdvTutarı" id="KdvTutarı"/></td></tr>  
-    <tr><td>Kdvli Toplam Tutar</td><td>:</td><td><input type="text" name="KdvliToplamTutar" id="KdvliToplamTutar"/></td></tr> 
+    <tr><td>Kdv Oranı</td><td>:</td><td><input type="number" name="kdv" id="kdv"/></td></tr>
+    <tr><td>Kdv Tutarı</td><td>:</td><td><input type="number" name="KdvTutarı" id="KdvTutarı"/></td></tr>  
+    <tr><td>Kdvli Toplam Tutar</td><td>:</td><td><input disabled type="number" name="KdvliToplamTutar" id="KdvliToplamTutar"/></td></tr> 
 
     <tr><td colspan="3" align="right"><input name="islem" type="button" value="Hesapla" onclick="faturaHesapla()" /></td></tr> 
     </table> 
